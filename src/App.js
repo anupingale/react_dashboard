@@ -11,7 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: [{ username: 'hello' }]
+      users: []
     };
     this.addUser = this.addUser.bind(this);
     this.showUser = this.showUser.bind(this);
@@ -47,7 +47,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.users[0].username}
+        {this.state.users.length}
         <button name="user" value="submit" onClick={this.showUser}>
           show users
         </button>
